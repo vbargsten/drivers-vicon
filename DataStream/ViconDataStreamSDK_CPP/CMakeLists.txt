@@ -17,7 +17,10 @@ set_target_properties(ViconDataStreamSDK_CPP PROPERTIES
 	POSITION_INDEPENDENT_CODE ON
 )
 
-install(TARGETS ViconDataStreamSDK_CPP)
+install(TARGETS ViconDataStreamSDK_CPP 
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+)
 
 install(
 	FILES
